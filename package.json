@@ -1,0 +1,16 @@
+{
+  "name": "hyper-serendipity-morning",
+  "version": "1.1.2",
+  "description": "Serendipity Morning theme for Hyper.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SevanBadal/hyper-serendipity-morning"
+  },
+  "keywords": ["theme", "hyper", "serendipity"],
+  "author": "Manafall",
+  "license": "ISC"
+}
