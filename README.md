@@ -5,7 +5,7 @@ A port of the [Serendipity](https://serendipitytheme.com/) color scheme for [Hyp
 
 ## Installation
 - Clone this repo in `.hyper_plugins/local`
-- Add "hyper-serendipity-morning" to the `localPlugins` array in your `.hyper.js` config file
+- Add "hyper-serendipity" to the `localPlugins` array in your `.hyper.js` config file
 
 ## Choosing a theme
 - this theme defaults to `morning` without needing to customize `.hyper.js`
