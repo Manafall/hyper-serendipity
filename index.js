@@ -117,15 +117,27 @@
         .footer_footer {
           background-color: ${theme.interface};
         }
-        .footer_footer .item_item {
-          color: ${theme.interface};
+        .footer_footer .item_item:before {
+          color: ${theme.text};
         }
-        .footer_footer .item_icon.icon_dirty {
-          background-color: ${theme.interface};
+        .item_cwd:before {
+          background-color: ${theme.text}!important;
         }
-        .footer_footer .item_icon.icon_pull,
-        .footer_footer .item_icon.icon_push {
-          background-color: ${theme.interface};
+        .item_cwd {
+          color: ${theme.text};
+        }
+        .item_branch:before {
+          background-color: ${theme.text}!important;
+        }
+        .icon_dirty {
+          background-color: ${theme.text}!important;
+        }
+        .item_icon {
+          color: ${theme.text}!important;
+        }
+        .icon_pull,
+        .icon_push {
+          background-color: ${theme.text}!important;
         }
       `
     });
