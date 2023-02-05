@@ -2,6 +2,9 @@
  * Project: Serendipity Hyper
  */
 
+  let today = new Date()
+  let hour = today.getHours()
+
   const serendipityMorning = {
     coral: "#D26A5D",
     salmon: "#F19A8E",
@@ -38,9 +41,28 @@
     focusHigh: "#535568"
   };
 
+  const serendipitySunset = {
+    coral: "#D1918F",
+    salmon: "#D6B4B4",
+    fennel: "#709BBD",
+    mint: "#AAC9D4",
+    violet: "#A392DC",
+    sky: "#A0B6E8",
+    base: "#202231",
+    interface: "#272938",
+    overlay: "#363847",
+    soft: "#6B6D7C",
+    slight: "#8D8F9E",
+    text: "#DEE0EF",
+    focusLow: "#292A3A",
+    focusMedium: "#414354",
+    focusHigh: "#535568"
+  };
+
   const themeDictionary = {
     'morning': serendipityMorning,
-    'midnight': serendipityMidnight
+    'midnight': serendipityMidnight,
+    'sunset': serendipitySunset
   }
 
   const fetchColors = (theme) => {
@@ -64,8 +86,20 @@
     }
   }
 
+  // fetch user specified theme or fetch dynamic theme
   const fetchTheme = ({hyperSerendipity}) => {
-    return themeDictionary[hyperSerendipity?.theme] || serendipityMorning
+    return themeDictionary[hyperSerendipity?.theme] || fetchDynamicTheme()
+  }
+
+  // 
+  const fetchDynamicTheme = () => {
+    if (hour >= 20 || hour < 6) { // 10pm-6am->Midnight
+      return serendipityMidnight  
+    } else if (hour >= 6 || hour < 18) { // 6am-6pm -> Morning
+      return serendipityMorning
+    } else { // 6pm-10pm -> Sunset
+      return serendipitySunset;
+    }
   }
   
   exports.decorateConfig = config => {
