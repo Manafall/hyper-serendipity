@@ -18,6 +18,11 @@ A port of the [Serendipity](https://serendipitytheme.com/) color scheme for [Hyp
     },
 ```
 ### Morning
-![Screenshot](assets/screen-shot-morning.png)
+![Screenshot](assets/morning.png)
+### Sunset
+![Screenshot](assets/sunset.png)
 ### Midnight
-![Screenshot](assets/screen-shot-midnight.png)
+![Screenshot](assets/midnight.png)
+
+#### oh-my-zsh theme used in screenshots
+[sevo.zsh-theme](https://gist.github.com/SevanBadal/467d09afe0d3309978a9d8e0a1029585)
