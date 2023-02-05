@@ -1,5 +1,5 @@
 ## Hyper Serendipity
-[![NPM](https://img.shields.io/npm/v/hyper-serendipity-morning)](https://www.npmjs.com/package/hyper-serendipity-morning)
+[![NPM](https://img.shields.io/npm/v/hyper-serendipity)](https://www.npmjs.com/package/hyper-serendipity)
 
 A port of the [Serendipity](https://serendipitytheme.com/) color scheme for [Hyper](https://hyper.is/)
 
