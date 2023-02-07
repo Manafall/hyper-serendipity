@@ -93,7 +93,7 @@
 
   // 
   const fetchDynamicTheme = () => {
-    if (hour >= 20 || hour < 6) { // 10pm-6am->Midnight
+    if (hour >= 22 || hour < 6) { // 10pm-6am->Midnight
       return serendipityMidnight  
     } else if (hour >= 6 && hour < 18) { // 6am-6pm -> Morning
       return serendipityMorning
